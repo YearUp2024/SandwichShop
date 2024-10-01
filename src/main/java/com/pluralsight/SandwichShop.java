@@ -17,15 +17,16 @@ public class SandwichShop {
     public static String promptUserForSandwichSize(){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the sandwich size:");
-        System.out.println("Regular: price $5.45");
-        System.out.println("Large: price $8.95");
-        System.out.print("Enter sandwich size: ");
+        System.out.print("Enter the sandwich size:" +
+                "\nRegular: price $5.45 " +
+                "\nLarge: price $8.95 " +
+                "\nEnter sandwich size: "
+        );
         String size = scanner.nextLine();
         return size;
     }
 
-    //This function is getting user age.
+    //This methoud is getting user age.
     public static int promptUserForAge(){
         Scanner scanner = new Scanner(System.in);
 
